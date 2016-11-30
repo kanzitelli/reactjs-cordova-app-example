@@ -47,7 +47,7 @@ cordova run android
 This assumes that you have the Android SDK installed.
 
 ### Used links
-0. (BrainPOP free stuff)[https://www.brainpop.com/free-stuff/]
-1. This (tutorial)[https://onsen.io/blog/cordova-hybrid-app-with-react-redux-webpack/] is very helpful
-2. Onsen UI and this (guide)[https://onsen.io/v2/docs/guide/react/]
-3. (Stickers)[http://goo.kiev.ua/stickers-vk/krolik-robert.html]
+0. [BrainPOP free stuff](https://www.brainpop.com/free-stuff/)
+1. This [tutorial](https://onsen.io/blog/cordova-hybrid-app-with-react-redux-webpack/) is very helpful
+2. Onsen UI and this [guide](https://onsen.io/v2/docs/guide/react/)
+3. [Stickers](http://goo.kiev.ua/stickers-vk/krolik-robert.html)
