@@ -69049,7 +69049,7 @@
 	
 	      switch (type) {
 	        case 'video':
-	          content = _react2.default.createElement('iframe', { src: t.url, height: 380, width: screen.width, key: 11 });
+	          content = _react2.default.createElement('iframe', { src: t.url, height: screen.height, width: screen.width, key: 11 });
 	          break;
 	        case 'text':
 	          content = _react2.default.createElement(

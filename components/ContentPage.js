@@ -178,7 +178,7 @@ class ContentPage extends React.Component {
 
     switch (type) {
       case 'video':
-        content = (<iframe src={t.url} height={380} width={screen.width} key={11}></iframe>);
+        content = (<iframe src={t.url} height={screen.height} width={screen.width} key={11}></iframe>);
         break;
       case 'text':
         content = (
