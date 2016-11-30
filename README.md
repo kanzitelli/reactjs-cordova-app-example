@@ -8,6 +8,9 @@ All data that is used within the application is taken from [BrainPOP](https://ww
 Check out the demo [video (.mov file)](https://drive.google.com/open?id=0B0r0qzpp4O-Wa3c2Q2xpTEdkeDQ).
 Check out the demo [file (.apk file)](https://drive.google.com/open?id=0B0r0qzpp4O-WX1NnQnNSMW1ITE0).
 
+### About application
+Professor Oli is a smart rabbit who is trying to educate people. And he uses his own approach that separates main areas of subjects, for example, Science, Social Studies, etc. And in the end of "game", a user gets his lovely topic and some free tutorials from BrainPOP.
+
 ### How to run it
 
 To run it simply do:
