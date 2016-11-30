@@ -1,60 +1,25 @@
-import fetch from 'isomorphic-fetch';
-import Promise from 'promise';
+import InitData from './fakeInitData';
+import Subject1 from './fakeSubject1';
+import Subject2 from './fakeSubject2';
+import Subject3 from './fakeSubject3';
+import Subject4 from './fakeSubject4';
+import Subject5 from './fakeSubject5';
+import Subject6 from './fakeSubject6';
+import Subject7 from './fakeSubject7';
 
-const API_KEY = '5a043a1bd95bf3ee500eb89de107b41e';
-const API_URL = 'http://api.openweathermap.org/data/2.5';
-
-// http://api.openweathermap.org/data/2.5/forecast/daily?id=524901&cnt=5&appid=5a043a1bd95bf3ee500eb89de107b41e
-
-const kelvinToCelsius = (kelvin) => kelvin - 273.15;
-
-const round = (value, decimals = 1) => {
-  const x = Math.pow(10, decimals);
-  return Math.round(x * value) / x;
+const Subjects = {
+  1: Subject1, 2: Subject2, 3: Subject3, 4: Subject4, 5: Subject5, 6: Subject6, 7: Subject7
 };
 
-const apiCall = (url) => {
-  return fetch(url)
-    .then(response => {
-      if (response.status >= 400) {
-        return Promise.reject('Invalid response');
-      }
+export function getInitData() {
+  // { .Left: [...], .Right: [...] }
+  return InitData;
+}
 
-      return response.json();
-    })
-    .then(json => {
-      if (parseInt(json.cod) !== 200) {
-        return Promise.reject('Invalid response');
-      }
+export function getSubjects() {
+  return Subjects;
+}
 
-      return json;
-    });
-};
-
-export const queryWeather = (city) => {
-  let data;
-
-  return apiCall(`${API_URL}/weather?q=${city.trim()}&appid=${API_KEY}`)
-    .then(json => {
-      data = {
-        temperature: round(kelvinToCelsius(json.main.temp), 0),
-        humidity: json.main.humidity,
-        icon: json.weather[0].id,
-        name: json.name,
-        country: json.sys.country.toLowerCase()
-      };
-
-      return apiCall(`${API_URL}/forecast/daily?id=${json.id}&cnt=5&appid=${API_KEY}`);
-    })
-    .then(json => {
-      return {
-        ...data,
-        forecast: json.list.map((d) => ({
-          weekday: (new Date(d.dt * 1000)).getDay(),
-          icon: d.weather[0].id,
-          maxTemp: round(kelvinToCelsius(d.temp.max), 0),
-          minTemp: round(kelvinToCelsius(d.temp.min), 0)
-        }))
-      };
-    });
-};
+export function getSubject(id) {
+  return Subjects[id];
+}

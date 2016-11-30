@@ -5,12 +5,14 @@ import {
   BackButton
 } from 'react-onsenui';
 
+import translate from '../language';
+
 const NavApp = ({title, navigator, backButton}) => (
   <Toolbar>
     <div className='left'>
-      {backButton ? <BackButton onClick={() => navigator.popPage()}>Back</BackButton> : null}
+      {backButton ? <BackButton onClick={() => navigator.popPage()}>{ translate('Back') }</BackButton> : null}
     </div>
-    <div className='center'>{title}</div>
+    <div className='center'>{ translate(title) }</div>
   </Toolbar>
 );
 

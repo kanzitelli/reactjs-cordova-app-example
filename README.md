@@ -1,14 +1,14 @@
-# React Redux Weather
+# [ReactJS + Cordova] hybrid app - Professor Oli.
+## CS 643. Fall 2016. Pace University.
 
-![React Redux Weather](https://raw.githubusercontent.com/argelius/react-onsenui-redux-weather/master/react_redux_weather.png)
+All data that is used within the application is taken from [BrainPOP](https://www.brainpop.com/free-stuff/). This project is created only for educational purposes.
 
-Weather app using Onsen UI, Redux, React and Webpack.
+![](https://drive.google.com/open?id=0B0r0qzpp4O-Wa3c2Q2xpTEdkeDQ)
 
-This app was built using [Onsen UI](https://onsen.io/), a hybrid app framework that provides both Material Design and iOS flat design. We recently released [React Components](https://onsen.io/v2/react.html).
+Check out the demo [video (.mov file)](https://drive.google.com/open?id=0B0r0qzpp4O-Wa3c2Q2xpTEdkeDQ).
+Check out the demo [file (.apk file)](https://drive.google.com/open?id=0B0r0qzpp4O-WX1NnQnNSMW1ITE0).
 
-Check out the demo [here](http://argelius.github.io/react-onsenui-redux-weather/demo.html).
-
-## How to run it
+### How to run it
 
 To run it simply do:
 
@@ -19,7 +19,7 @@ npm start
 
 The app will run at [http://localhost:9000](http://localhost:9000).
 
-## How to build it
+### How to build it
 
 You can build it using Cordova.
 
@@ -43,11 +43,3 @@ cordova run android
 ```
 
 This assumes that you have the Android SDK installed.
-
-## Contributing
-
-1. Fork it ( https://github.com/argelius/react-onsenui-redux-weather/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request

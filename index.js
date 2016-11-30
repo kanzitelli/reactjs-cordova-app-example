@@ -25,17 +25,17 @@ const store = createStore(weatherApp,
     : applyMiddleware(thunk, logger)
 );
 
-import {addLocationAndFetchWeather} from './actions';
+// import {addLocationAndFetchWeather} from './actions';
 
-[
-  'Tokyo',
-  'New York',
-  'London',
-  'Beijing',
-  'Sydney',
-  'Rio de Janeiro',
-  'Istanbul'
-].forEach((city) => store.dispatch(addLocationAndFetchWeather(city)));
+// [
+//   'Tokyo',
+//   'New York',
+//   'London',
+//   'Beijing',
+//   'Sydney',
+//   'Rio de Janeiro',
+//   'Istanbul'
+// ].forEach((city) => store.dispatch(addLocationAndFetchWeather(city)));
 
 const rootElement = document.getElementById('root');
 
